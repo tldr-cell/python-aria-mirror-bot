@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: python-telegram-bot
+    versions:
+    - "> 13.2, < 14"
+  - dependency-name: google-api-python-client
+    versions:
+    - 2.0.2
